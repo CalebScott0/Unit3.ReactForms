@@ -19,6 +19,7 @@ export default function SignUpForm({ setToken }) {
         // grab token from data object
         setToken(data.token);
         // clear fields on submit
+        window.alert("Submission successful, ready to authenticate")
         setUsername("");
         setPassword("");
     } catch (err) {
@@ -39,6 +40,7 @@ export default function SignUpForm({ setToken }) {
             required={true}
             pattern={"[a-z0-9]{8,}"}
             title={"Minimum 8 Characters - Letters and Numbers Only"}
+            placeholder={"Minimum 8 Characters - Letters and Numbers Only"}
               value={username}
               onChange={(e) => {
                 setUsername(e.target.value);
@@ -52,14 +54,15 @@ export default function SignUpForm({ setToken }) {
             required={true}
             pattern={"[a-z0-9]{8,}"}
             title={"Minimum 8 Characters - Letters and Numbers Only"}
+            placeholder={"Minimum 8 Characters - Letters and Numbers Only"}
               value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
             />
           </label>
-        <input type="submit" />
         </fieldset>
+        <input type="submit" />
       </form>
     </div>
   );
