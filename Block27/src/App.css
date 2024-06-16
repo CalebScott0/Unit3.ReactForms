@@ -8,21 +8,28 @@ body {
   font-family: tahoma;
 }
 
+h1 {
+  letter-spacing: 1px;
+}
+
 form, .authenticate {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
-  margin: 10px auto;
+  margin: 0.625rem auto;
+}
+form {
+  border-bottom: 3px solid #494960;
 }
 label {
   display: block;
   text-align: left;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 input {
   width: 100%;
-  min-height: 2em;
-  margin-top: 0.5em;
+  min-height: 2rem;
+  margin-top: 0.5rem;
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #f5f6f7;
@@ -32,15 +39,15 @@ fieldset {
   border-bottom: 3px solid #494960;
 }
 legend{
-  padding-top: 1em;
+  padding-top: 1rem;
   text-align: center;
 }
 input[type="submit"],button {
   width: 60%;
   min-width: 300px;
-  height: 2em;
-  margin: 1em auto;
-  font-size: 1.1em;
+  height: 2rem;
+  margin: 1rem auto;
+  font-size: 1.1rem;
   background-color: #3b3b4f;
   border: 1px solid #f5f6f7;
   color: #f5f6f7;
