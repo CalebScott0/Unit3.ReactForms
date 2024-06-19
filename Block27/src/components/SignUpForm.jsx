@@ -90,7 +90,7 @@ export default function SignUpForm({ setToken }) {
           <label>
             Password:
             <input
-              // type="password"
+              type="password"
               // required={true}
               // pattern={"[A-Za-z0-9]{8,}"}
               // title={"Minimum 8 Characters - Letters and Numbers Only"}
